@@ -1,0 +1,9 @@
+{
+  "name": "doc_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.doc_server"],
+  "tools": ["pdf_to_word"],
+  "timeout": 30,
+  "enabled": true
+}

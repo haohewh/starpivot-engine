@@ -1,0 +1,9 @@
+{
+  "name": "notification_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.notification_server"],
+  "tools": ["email_send", "sms_send"],
+  "timeout": 30,
+  "enabled": true
+}

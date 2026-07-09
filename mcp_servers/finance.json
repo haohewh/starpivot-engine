@@ -1,0 +1,9 @@
+{
+  "name": "finance_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.finance_server"],
+  "tools": ["finance_report", "finance_audit", "finance_budget", "finance_invoice", "finance_tax"],
+  "timeout": 30,
+  "enabled": true
+}

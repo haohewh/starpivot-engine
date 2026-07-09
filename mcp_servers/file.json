@@ -1,0 +1,9 @@
+{
+  "name": "file_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.file_server"],
+  "tools": ["read_file", "read_user_file", "write_file", "list_files"],
+  "timeout": 8,
+  "enabled": true
+}

@@ -1,0 +1,1 @@
+{"name":"payment_server","transport":"stdio","command":"/opt/starpivot/venv/bin/python","args":["-m","mcp_servers.payment_server"],"tools":["alipay_pay","alipay_refund","alipay_query","wechat_pay","wechat_refund","wechat_query","e_cny_pay","e_cny_query"],"timeout":15,"enabled":true}

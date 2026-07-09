@@ -1,0 +1,9 @@
+{
+  "name": "web_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.web_server"],
+  "tools": ["web_search", "agent_reach_web_read", "read_hot_news", "web_crawl"],
+  "timeout": 60,
+  "enabled": true
+}

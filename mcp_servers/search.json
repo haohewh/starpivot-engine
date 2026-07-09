@@ -1,0 +1,9 @@
+{
+  "name": "search_engine",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.search_server"],
+  "tools": ["agent_reach_search"],
+  "timeout": 15,
+  "enabled": true
+}

@@ -1,0 +1,9 @@
+{
+  "name": "marketplace_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.marketplace_server"],
+  "tools": ["tool_publish", "tool_install", "tool_search", "tool_rate", "tool_top", "tool_review"],
+  "timeout": 15,
+  "enabled": true
+}

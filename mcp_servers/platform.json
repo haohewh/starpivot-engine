@@ -1,0 +1,1 @@
+{"name":"platform_server","transport":"stdio","command":"/opt/starpivot/venv/bin/python","args":["-m","mcp_servers.platform_server"],"tools":["wechat_send_msg","dingtalk_send_msg","xiaohongshu_search","douyin_upload","douyin_get_data","jianying_create","jianying_export","feishu_send_msg","feishu_get_doc","meeting_create","meeting_join_url"],"timeout":15,"enabled":true}

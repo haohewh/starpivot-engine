@@ -1,0 +1,9 @@
+{
+  "name": "image_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.image_server"],
+  "tools": ["generate_image_freeapi", "ocr_image", "compose_poster"],
+  "timeout": 60,
+  "enabled": true
+}

@@ -1,0 +1,1 @@
+{"name":"model_server","transport":"stdio","command":"/opt/starpivot/venv/bin/python","args":["-m","mcp_servers.model_server"],"tools":["deepseek_chat","qwen_chat","kimi_chat","minimax_chat","siliconflow_chat","doubao_chat"],"timeout":30,"enabled":true}

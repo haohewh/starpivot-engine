@@ -1,0 +1,9 @@
+{
+  "name": "code_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.code_server"],
+  "tools": ["run_python", "run_shell"],
+  "timeout": 30,
+  "enabled": true
+}

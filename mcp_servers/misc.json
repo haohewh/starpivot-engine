@@ -1,0 +1,9 @@
+{
+  "name": "misc_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.misc_server"],
+  "tools": ["calculate", "echo", "skills_execute", "generate_image", "call_agent"],
+  "timeout": 30,
+  "enabled": true
+}

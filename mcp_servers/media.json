@@ -1,0 +1,9 @@
+{
+  "name": "media_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.media_server"],
+  "tools": ["download_video", "video_to_text", "generate_video"],
+  "timeout": 120,
+  "enabled": true
+}

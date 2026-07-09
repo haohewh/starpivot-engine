@@ -1,0 +1,9 @@
+{
+  "name": "data_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.data_server"],
+  "tools": ["convert_document", "data_clean", "export_csv", "export_excel", "chart_generate"],
+  "timeout": 60,
+  "enabled": true
+}

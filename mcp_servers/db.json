@@ -1,0 +1,9 @@
+{
+  "name": "db_server",
+  "transport": "stdio",
+  "command": "/opt/starpivot/venv/bin/python",
+  "args": ["-m", "mcp_servers.db_server"],
+  "tools": ["query_database"],
+  "timeout": 8,
+  "enabled": true
+}
