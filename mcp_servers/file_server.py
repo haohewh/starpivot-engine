@@ -88,7 +88,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="read_file",
-            description="通用文件读取工具。读取任何可访问的文件（无需 user_id 限制）。"
+            description="Generic file read tool (no user_id restriction) / 通用文件读取工具"
                         "使用绝对路径或相对于当前工作目录的路径。",
             inputSchema={
                 "type": "object",
@@ -103,7 +103,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="read_user_file",
-            description="读取用户文件（只允许读取 /opt/starpivot/user_files/ 目录下的文件）。",
+            description="Read user files (sandboxed to user_files directory) / 读取用户文件",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -121,7 +121,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="write_file",
-            description="写入文件内容（覆盖写入，自动创建父目录）。"
+            description="Write file content (overwrite, auto-create parent dirs) / 写入文件内容（覆盖写入，自动创建父目录）。"
                         "只允许写入 /opt/starpivot/user_files/{user_id}/outputs/ 目录。",
             inputSchema={
                 "type": "object",
@@ -144,7 +144,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="list_files",
-            description="列出目录下的文件和文件夹。"
+            description="List files and directories / 列出目录下的文件和文件夹。"
                         "只允许列出 /opt/starpivot/user_files/{user_id}/ 目录。",
             inputSchema={
                 "type": "object",
