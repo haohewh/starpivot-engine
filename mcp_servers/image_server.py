@@ -86,7 +86,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="generate_image_freeapi",
-            description="通过 MiniMax API 生成图片。无需 GPU，需要配置 MINIMAX_API_KEY。",
+            description="Generate images via MiniMax API. Requires MINIMAX_API_KEY / 通过 MiniMax API 生成图片",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -105,7 +105,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="ocr_image",
-            description="使用 RapidOCR 识别图片中的文字。"
+            description="OCR text recognition from images via RapidOCR / 使用 RapidOCR 识别图片中的文字。"
                         "基于 ONNX Runtime，无需 GPU，支持中英文混合识别。",
             inputSchema={
                 "type": "object",
@@ -120,7 +120,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="compose_poster",
-            description="从文案和图片生成完整海报（HTML 格式）。"
+            description="Generate poster from text and images (HTML format) / 从文案和图片生成完整海报（HTML 格式）。"
                         "生成包含内嵌 CSS 样式的完整 HTML 海报文件。"
                         "如果有 Playwright 可用，可以截图输出为 PNG。",
             inputSchema={
