@@ -235,7 +235,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="download_video",
-            description="下载视频/音频：使用 yt-dlp 从 YouTube、Bilibili 等数百个网站下载视频。"
+            description="Download video/audio from YouTube, Bilibili and hundreds of sites via yt-dlp / 下载视频/音频：使用 yt-dlp 从 YouTube、Bilibili 等数百个网站下载视频。"
                         "下载文件保存在临时目录，返回本地路径。",
             inputSchema={
                 "type": "object",
@@ -250,7 +250,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="video_to_text",
-            description="视频转文字：从视频文件中提取音频并转写为文字。"
+            description="Video to text: extract audio from video and transcribe / 视频转文字"
                         "使用 ffmpeg 提取音频 + whisper 语音识别。"
                         "支持 MP4/MKV/AVI/MOV/FLV 等常见视频格式。"
                         "返回带时间戳的文字分段。",
@@ -272,7 +272,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="generate_video",
-            description="AI 视频生成：根据文字描述自动生成视频（占位实现）。"
+            description="AI video generation from text descriptions (placeholder) / AI 视频生成：根据文字描述自动生成视频（占位实现）。"
                         "支持指定时长、分辨率和模型。"
                         "当前为模拟占位，后续接入 MiniMax 等 AI 视频生成 API。",
             inputSchema={
