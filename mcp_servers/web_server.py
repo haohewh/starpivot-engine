@@ -230,7 +230,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="web_search",
-            description="使用 Firecrawl API 执行网络搜索。返回搜索结果标题、链接和摘要。"
+            description="Web search via Firecrawl API. Returns titles, links, and snippets / 使用 Firecrawl API 执行网络搜索。"
                         "需要设置 FIRECRAWL_API_KEY 环境变量。",
             inputSchema={
                 "type": "object",
@@ -245,7 +245,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="agent_reach_web_read",
-            description="读取任意网页内容。优先使用 Agent-Reach WebChannel，"
+            description="Read any web page content via Agent-Reach WebChannel / 读取任意网页内容"
                         "兜底使用 requests + BeautifulSoup 解析。"
                         "返回纯文本内容（去除脚本、样式、导航等噪音），截断到 5000 字符。",
             inputSchema={
@@ -261,7 +261,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="agent_reach_search",
-            description="注意：此功能已移至 search_server。请使用 search_server 的 agent_reach_search。",
+            description="Note: moved to search_server. Use agent_reach_search instead / 此功能已移至 search_server",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -275,7 +275,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="read_hot_news",
-            description="读取今日热点新闻。"
+            description="Read today's hot/trending news / 读取今日热点新闻。"
                         "从百度热搜和今日热榜等多个新闻源获取最新热门内容，汇总返回。"
                         "无需任何 API Key，免费使用。",
             inputSchema={
@@ -291,7 +291,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="web_crawl",
-            description="爬取整个网站，提取结构化数据。"
+            description="Crawl entire website to extract structured data / 爬取整个网站，提取结构化数据。"
                         "支持递归爬取同域名下页面、自动提取正文、提取页面链接。"
                         "优先使用 crawl4ai（支持 JS 渲染），兜底使用 requests+BeautifulSoup。"
                         "适合用于网站内容采集、数据挖掘等场景。",
