@@ -52,7 +52,7 @@ def _get_manager():
 TOOLS = [
     Tool(
         name="tool_publish",
-        description="发布工具到市场（提交代码+配置）",
+        description="Publish tool to marketplace (submit code + config) / 发布工具到市场（提交代码+配置）",
         inputSchema={
             "type": "object",
             "properties": {
@@ -68,7 +68,7 @@ TOOLS = [
     ),
     Tool(
         name="tool_install",
-        description="从市场安装工具（自动注册到引擎）",
+        description="Install tool from marketplace (auto-register to engine) / 从市场安装工具（自动注册到引擎）",
         inputSchema={
             "type": "object",
             "properties": {
@@ -80,7 +80,7 @@ TOOLS = [
     ),
     Tool(
         name="tool_search",
-        description="搜索市场上的工具",
+        description="Search tools in marketplace / 搜索市场上的工具",
         inputSchema={
             "type": "object",
             "properties": {
@@ -93,7 +93,7 @@ TOOLS = [
     ),
     Tool(
         name="tool_rate",
-        description="给工具评分（1-5星）",
+        description="Rate tool (1-5 stars) / 给工具评分（1-5星）",
         inputSchema={
             "type": "object",
             "properties": {
@@ -107,7 +107,7 @@ TOOLS = [
     ),
     Tool(
         name="tool_top",
-        description="热门工具排行榜",
+        description="Top tools leaderboard / 热门工具排行榜",
         inputSchema={
             "type": "object",
             "properties": {
@@ -118,7 +118,7 @@ TOOLS = [
     ),
     Tool(
         name="tool_review",
-        description="审核工具（管理员）",
+        description="Review/approve tools (admin only) / 审核工具（管理员）",
         inputSchema={
             "type": "object",
             "properties": {
