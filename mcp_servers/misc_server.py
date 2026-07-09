@@ -102,7 +102,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="echo",
-            description="直接返回输入的文本。用于测试工具调用链路是否正常。",
+            description="Echo input text. For testing tool call chain / 直接返回输入的文本。",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -116,7 +116,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="skills_execute",
-            description="执行指定的技能（Skill）。"
+            description="Execute a specified skill / 执行指定的技能（Skill）。"
                         "技能系统是星枢的扩展能力，包括 browser_navigate、"
                         "web_search、read_file 等数百个预定义技能。",
             inputSchema={
@@ -132,7 +132,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="generate_image",
-            description="通过 LLM 生成 SVG 图片（无需 GPU，无需外部 API）。"
+            description="Generate SVG images via LLM (no GPU or external API needed) / 通过 LLM 生成 SVG 图片"
                         "支持多种视觉风格：modern, minimal, colorful, sketch, vintage。",
             inputSchema={
                 "type": "object",
@@ -162,7 +162,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="call_agent",
-            description="调用另一个 Agent 执行任务。"
+            description="Call another Agent to execute a task / 调用另一个 Agent 执行任务。"
                         "支持通知（notify）、请求（request）、审批（approve）、审计（audit）四种任务类型。",
             inputSchema={
                 "type": "object",
