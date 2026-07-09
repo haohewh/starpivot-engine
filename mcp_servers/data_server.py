@@ -607,7 +607,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="export_excel",
-            description="导出 Excel (.xlsx) 文件。支持从字符串或二维数组导出。"
+            description="Export data to Excel (.xlsx) file / 导出 Excel (.xlsx) 文件"
                         "自动调整列宽，支持指定工作表名称。",
             inputSchema={
                 "type": "object",
@@ -636,7 +636,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="chart_generate",
-            description="生成图表（matplotlib），返回 base64 编码的 PNG 图片。"
+            description="Generate charts (matplotlib), returns base64-encoded PNG / 生成图表"
                         "支持柱状图、折线图、饼图、散点图、水平柱状图。"
                         "需安装 matplotlib 和 numpy。",
             inputSchema={
