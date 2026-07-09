@@ -153,7 +153,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="email_send",
-            description="发送邮件（SMTP）。需要配置 SMTP_HOST/SMTP_USER/SMTP_PASS 环境变量或传入参数。"
+            description="Send email via SMTP. Requires SMTP_HOST/USER/PASS env vars / 发送邮件（SMTP）。"
                         "支持 TLS 加密，正文为纯文本。",
             inputSchema={
                 "type": "object",
@@ -172,7 +172,7 @@ async def list_tools() -> list[Tool]:
                     },
                     "smtp_host": {
                         "type": "string",
-                        "description": "SMTP 服务器地址（可选，默认从 SMTP_HOST 环境变量读取）",
+                        "description": "SMTP server address (optional, defaults to SMTP_HOST env var) / SMTP 服务器地址",
                     },
                     "smtp_port": {
                         "type": "integer",
@@ -180,11 +180,11 @@ async def list_tools() -> list[Tool]:
                     },
                     "smtp_user": {
                         "type": "string",
-                        "description": "SMTP 用户名（可选，默认从 SMTP_USER 环境变量读取）",
+                        "description": "SMTP username (optional, defaults to SMTP_USER env var) / SMTP 用户名",
                     },
                     "smtp_pass": {
                         "type": "string",
-                        "description": "SMTP 密码（可选，默认从 SMTP_PASS 环境变量读取）",
+                        "description": "SMTP password (optional, defaults to SMTP_PASS env var) / SMTP 密码",
                     },
                     "use_tls": {
                         "type": "boolean",
@@ -197,7 +197,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="sms_send",
-            description="发送短信（占位实现）。当前为模拟发送，真实网关待接入。"
+            description="Send SMS (placeholder). Uses mock gateway / 发送短信（占位实现）。"
                         "支持 provider 参数预留对接 Twilio/阿里云等。",
             inputSchema={
                 "type": "object",
