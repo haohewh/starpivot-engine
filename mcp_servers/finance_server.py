@@ -55,7 +55,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="finance_report",
-            description="财务报表生成：生成损益表、资产负债表、现金流量表。支持 JSON/CSV/Text 格式。",
+            description="Generate financial statements: P&L, balance sheet, cash flow (JSON/CSV/Text) / 财务报表生成",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -83,7 +83,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="finance_audit",
-            description="审计查询：查询审计操作记录，支持按操作类型、操作人、目标类型、关键词筛选。",
+            description="Query audit logs with filters (operation type, operator, target, keyword) / 审计查询",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -127,7 +127,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="finance_budget",
-            description="预算管理：列出、创建、更新预算项。支持按部门、财年筛选。",
+            description="Budget management: list, create, update budget items by department/fiscal year / 预算管理",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -166,7 +166,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="finance_invoice",
-            description="发票管理：列出发票、录入发票、核验发票。支持按状态、开票方筛选。",
+            description="Invoice management: list, create, verify invoices / 发票管理：列出发票、录入发票、核验发票。",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -227,7 +227,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="finance_tax",
-            description="税务计算：增值税计算、企业所得税估算、个人所得税估算。",
+            description="Tax calculation: VAT, corporate income tax, personal income tax estimates / 税务计算",
             inputSchema={
                 "type": "object",
                 "properties": {
