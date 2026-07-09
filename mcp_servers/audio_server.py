@@ -174,7 +174,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="agent_speak",
-            description="语音合成（TTS）：将文字转为语音 MP3 文件。"
+            description="Text-to-speech: convert text to MP3 audio / 语音合成（TTS）"
                         "使用 Edge TTS 引擎，免费且无需 GPU。"
                         "支持多种中文声音（女声/男声）。",
             inputSchema={
@@ -198,7 +198,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="speech_recognition",
-            description="语音识别（STT）：将音频文件转写为文字。"
+            description="Speech-to-text: transcribe audio to text / 语音识别（STT）"
                         "支持 MP3/WAV/M4A/FLAC/OGG 等格式。"
                         "自动检测并优先使用 faster-whisper → openai-whisper → Google STT。",
             inputSchema={
