@@ -12,21 +12,21 @@ app = Server("platform_server")
 
 TOOLS = [
     # 已有
-    Tool(name="wechat_send_msg", description="发送微信消息", inputSchema={"type":"object","properties":{"msg":{"type":"string"},"to":{"type":"string"}},"required":["msg"]}),
-    Tool(name="dingtalk_send_msg", description="发送钉钉消息", inputSchema={"type":"object","properties":{"msg":{"type":"string"}},"required":["msg"]}),
-    Tool(name="xiaohongshu_search", description="搜索小红书笔记", inputSchema={"type":"object","properties":{"keyword":{"type":"string"}},"required":["keyword"]}),
+    Tool(name="wechat_send_msg", description="Send WeChat message / 发送微信消息", inputSchema={"type":"object","properties":{"msg":{"type":"string"},"to":{"type":"string"}},"required":["msg"]}),
+    Tool(name="dingtalk_send_msg", description="Send DingTalk message / 发送钉钉消息", inputSchema={"type":"object","properties":{"msg":{"type":"string"}},"required":["msg"]}),
+    Tool(name="xiaohongshu_search", description="Search Xiaohongshu (RED) posts / 搜索小红书笔记", inputSchema={"type":"object","properties":{"keyword":{"type":"string"}},"required":["keyword"]}),
     # 抖音
-    Tool(name="douyin_upload", description="上传视频到抖音", inputSchema={"type":"object","properties":{"video_path":{"type":"string"},"title":{"type":"string"},"description":{"type":"string"},"hashtags":{"type":"array","items":{"type":"string"}}},"required":["video_path"]}),
-    Tool(name="douyin_get_data", description="获取抖音视频数据", inputSchema={"type":"object","properties":{"video_id":{"type":"string"}},"required":["video_id"]}),
+    Tool(name="douyin_upload", description="Upload video to Douyin (TikTok China) / 上传视频到抖音", inputSchema={"type":"object","properties":{"video_path":{"type":"string"},"title":{"type":"string"},"description":{"type":"string"},"hashtags":{"type":"array","items":{"type":"string"}}},"required":["video_path"]}),
+    Tool(name="douyin_get_data", description="Get Douyin video data / 获取抖音视频数据", inputSchema={"type":"object","properties":{"video_id":{"type":"string"}},"required":["video_id"]}),
     # 剪映
-    Tool(name="jianying_create", description="创建剪映草稿", inputSchema={"type":"object","properties":{"title":{"type":"string"},"template_id":{"type":"string"},"materials":{"type":"array","items":{"type":"object"}}},"required":["title"]}),
-    Tool(name="jianying_export", description="从剪映导出视频", inputSchema={"type":"object","properties":{"draft_id":{"type":"string"},"quality":{"type":"string"},"format":{"type":"string"}},"required":["draft_id"]}),
+    Tool(name="jianying_create", description="Create Jianying (CapCut) draft / 创建剪映草稿", inputSchema={"type":"object","properties":{"title":{"type":"string"},"template_id":{"type":"string"},"materials":{"type":"array","items":{"type":"object"}}},"required":["title"]}),
+    Tool(name="jianying_export", description="Export video from Jianying (CapCut) / 从剪映导出视频", inputSchema={"type":"object","properties":{"draft_id":{"type":"string"},"quality":{"type":"string"},"format":{"type":"string"}},"required":["draft_id"]}),
     # 飞书
-    Tool(name="feishu_send_msg", description="发送飞书消息", inputSchema={"type":"object","properties":{"receive_id":{"type":"string"},"content":{"type":"string"},"msg_type":{"type":"string"}},"required":["receive_id","content"]}),
-    Tool(name="feishu_get_doc", description="获取飞书文档内容", inputSchema={"type":"object","properties":{"document_id":{"type":"string"}},"required":["document_id"]}),
+    Tool(name="feishu_send_msg", description="Send Feishu (Lark) message / 发送飞书消息", inputSchema={"type":"object","properties":{"receive_id":{"type":"string"},"content":{"type":"string"},"msg_type":{"type":"string"}},"required":["receive_id","content"]}),
+    Tool(name="feishu_get_doc", description="Get Feishu document content / 获取飞书文档内容", inputSchema={"type":"object","properties":{"document_id":{"type":"string"}},"required":["document_id"]}),
     # 腾讯会议
-    Tool(name="meeting_create", description="创建腾讯会议", inputSchema={"type":"object","properties":{"title":{"type":"string"},"duration_minutes":{"type":"integer","default":60}},"required":["title"]}),
-    Tool(name="meeting_join_url", description="获取腾讯会议入会链接", inputSchema={"type":"object","properties":{"meeting_id":{"type":"string"},"user_display_name":{"type":"string"}},"required":["meeting_id"]}),
+    Tool(name="meeting_create", description="Create Tencent Meeting / 创建腾讯会议", inputSchema={"type":"object","properties":{"title":{"type":"string"},"duration_minutes":{"type":"integer","default":60}},"required":["title"]}),
+    Tool(name="meeting_join_url", description="Get Tencent Meeting join URL / 获取腾讯会议入会链接", inputSchema={"type":"object","properties":{"meeting_id":{"type":"string"},"user_display_name":{"type":"string"}},"required":["meeting_id"]}),
 ]
 
 # 平台工具名 -> (平台名, 动作名) 映射
